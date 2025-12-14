@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Foodie – Delicious food, delivered to you</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- LEFT MAIN PAGE -->
+      <main class="main">
+        <!-- ========== NAVBAR + HERO ========== -->
+        <header class="hero" id="home">
+          <nav class="navbar">
+            <div class="logo">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+                alt="Foodie logo"
+              />
+              <span>Foodie</span>
+            </div>
+
+            <ul class="nav-links">
+              <li>
+                <a href="#home" data-scroll-target="#home" class="active"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#restaurants"
+                  data-scroll-target="#restaurants"
+                  >Restaurants</a
+                >
+              </li>
+              <li>
+                <a href="#reviews" data-scroll-target="#reviews">Reviews</a>
+              </li>
+              <li>
+                <a href="#download" data-scroll-target="#download">Download</a>
+              </li>
+            </ul>
+
+            <div class="nav-auth">
+              <a href="login.html" class="nav-login">Login</a>
+              <a href="signup.html" class="nav-signup">Sign Up</a>
+            </div>
+          </nav>
+
+          <section class="hero-content">
+            <!-- LEFT HERO TEXT -->
+            <div class="hero-text">
+              <span class="hero-tag">
+                <span class="dot"></span>
+                Food Delivery
+              </span>
+
+              <h1>Delicious food, delivered to you.</h1>
+
+              <p class="hero-subtitle">
+                Order your favorite meals from the best restaurants in your city
+                and get them delivered to your doorstep in minutes.
+              </p>
+
+              <div class="hero-actions">
+                <!-- Scroll to restaurants section -->
+                <a
+                  href="#restaurants"
+                  data-scroll-target="#restaurants"
+                  class="btn btn-primary"
+                  >Order Now</a
+                >
+
+                <!-- Scroll to categories section -->
+                <button
+                  class="btn btn-ghost"
+                  type="button"
+                  data-scroll-target="#categories"
+                >
+                  How it works
+                </button>
+              </div>
+
+              <!-- SEARCH BAR -->
+              <form class="search-bar">
+                <div class="search-field">
+                  <label for="location">Delivery to</label>
+                  <input
+                    id="location"
+                    type="text"
+                    placeholder="Enter your address"
+                  />
+                </div>
+                <div class="search-field">
+                  <label for="category">Category</label>
+                  <select id="category">
+                    <option>All Categories</option>
+                    <option>Pizza</option>
+                    <option>Burger</option>
+                    <option>Sushi</option>
+                    <option>Asian</option>
+                    <option>Dessert</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-search">Search</button>
+              </form>
+            </div>
+
+            <!-- RIGHT HERO CARD -->
+            <div class="hero-image">
+              <div class="hero-card">
+                <img
+                  src="https://images.pexels.com/photos/4109139/pexels-photo-4109139.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Tasty dish"
+                />
+                <div class="hero-card-body">
+                  <h3>Fresh &amp; Hot</h3>
+                  <p>
+                    Prepared by top chefs and trusted restaurants.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+
+        <!-- ========== BROWSE BY CATEGORY ========== -->
+        <section class="section categories" id="categories">
+          <div class="section-header">
+            <div>
+              <h2>Browse by Category</h2>
+              <p>Pick a category to discover great meals.</p>
+            </div>
+          </div>
+
+          <div class="category-grid">
+            <button class="category-card active">
+              <span class="category-icon">🍕</span>
+              <span class="category-label">Pizza</span>
+            </button>
+            <button class="category-card">
+              <span class="category-icon">🍔</span>
+              <span class="category-label">Burger</span>
+            </button>
+            <button class="category-card">
+              <span class="category-icon">🍣</span>
+              <span class="category-label">Sushi</span>
+            </button>
+            <button class="category-card">
+              <span class="category-icon">🥗</span>
+              <span class="category-label">Healthy</span>
+            </button>
+            <button class="category-card">
+              <span class="category-icon">🥡</span>
+              <span class="category-label">Asian</span>
+            </button>
+            <button class="category-card">
+              <span class="category-icon">🍰</span>
+              <span class="category-label">Dessert</span>
+            </button>
+          </div>
+        </section>
+
+        <!-- ========== FEATURED RESTAURANTS ========== -->
+        <section class="section" id="restaurants">
+          <div class="section-header">
+            <h2>Featured Restaurants</h2>
+            <a href="#">View all</a>
+          </div>
+
+          <div class="restaurant-grid">
+            <article class="restaurant-card">
+              <div class="restaurant-thumb">
+                <img
+                  src="https://images.pexels.com/photos/2290070/pexels-photo-2290070.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Pizza Palace"
+                />
+                <span class="badge badge-featured">Featured</span>
+              </div>
+              <div class="restaurant-body">
+                <h3>Pizza Palace</h3>
+                <p>Italian • Pizza • Fast Food</p>
+                <div class="restaurant-meta">
+                  <span class="rating">★ 4.8</span>
+                  <span class="dot"></span>
+                  <span>25–30 min</span>
+                  <span class="dot"></span>
+                  <span>Free delivery</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <div class="restaurant-thumb">
+                <img
+                  src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Burger Shack"
+                />
+              </div>
+              <div class="restaurant-body">
+                <h3>Burger Shack</h3>
+                <p>American • Burgers • Fries</p>
+                <div class="restaurant-meta">
+                  <span class="rating">★ 4.6</span>
+                  <span class="dot"></span>
+                  <span>20–25 min</span>
+                  <span class="dot"></span>
+                  <span>$2.50 delivery</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <div class="restaurant-thumb">
+                <img
+                  src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Tasty World"
+                />
+              </div>
+              <div class="restaurant-body">
+                <h3>Tasty World</h3>
+                <p>Asian • Noodles • Rice</p>
+                <div class="restaurant-meta">
+                  <span class="rating">★ 4.7</span>
+                  <span class="dot"></span>
+                  <span>30–35 min</span>
+                  <span class="dot"></span>
+                  <span>$1.99 delivery</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="restaurant-card">
+              <div class="restaurant-thumb">
+                <img
+                  src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Spice Route"
+                />
+              </div>
+              <div class="restaurant-body">
+                <h3>Spice Route</h3>
+                <p>Indian • Curry • Veg</p>
+                <div class="restaurant-meta">
+                  <span class="rating">★ 4.9</span>
+                  <span class="dot"></span>
+                  <span>35–40 min</span>
+                  <span class="dot"></span>
+                  <span>$3.50 delivery</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== PROMO OFFERS ========== -->
+        <section class="section promos">
+          <div class="section-header">
+            <h2>Promo Offers</h2>
+          </div>
+
+          <div class="promo-grid">
+            <div class="promo-card">
+              <h3>25% Off on your first order</h3>
+              <p>
+                Use code <strong>FIRST25</strong> at checkout and enjoy instant
+                savings.
+              </p>
+            </div>
+            <div class="promo-card">
+              <h3>Free delivery above $20</h3>
+              <p>Available on selected restaurants during weekdays.</p>
+            </div>
+            <div class="promo-card">
+              <h3>Weekend combo deals</h3>
+              <p>Grab exciting combos every Friday – Sunday.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS ========== -->
+        <section class="section testimonials" id="reviews">
+          <div class="section-header">
+            <h2>What Our Customers Say</h2>
+          </div>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="testimonial-user">
+                <img
+                  src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Emily"
+                />
+                <div>
+                  <h3>pratham sharma</h3>
+                  <span>Frequent Customer</span>
+                </div>
+              </div>
+              <p>
+                “Foodie has made weeknight dinners so convenient. Delivery is
+                always fast and the food is hot.”
+              </p>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-user">
+                <img
+                  src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="James"
+                />
+                <div>
+                  <h3>Aman kumar</h3>
+                  <span>Food Blogger</span>
+                </div>
+              </div>
+              <p>
+                “Great variety of restaurants and the app experience is super
+                smooth and intuitive.”
+              </p>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-user">
+                <img
+                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400"
+                  alt="Sara"
+                />
+                <div>
+                  <h3>Sarah Lee</h3>
+                  <span>Working Professional</span>
+                </div>
+              </div>
+              <p>
+                “Scheduling deliveries ahead of time is a life saver on busy
+                days. Highly recommended!”
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- ========== DOWNLOAD APP ========== -->
+        <section class="section download" id="download">
+          <div class="download-inner">
+            <div class="download-text">
+              <h2>Get the Foodie App</h2>
+              <p>
+                Order food on the go, track your delivery in real time and save
+                your favorite orders for next time.
+              </p>
+
+              <div class="store-buttons">
+                <a href="#" class="store-btn">
+                  <span class="store-title">Download on the</span>
+                  <span class="store-name">App Store</span>
+                </a>
+                <a href="#" class="store-btn">
+                  <span class="store-title">Get it on</span>
+                  <span class="store-name">Google Play</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="download-visual">
+              <img
+                src="https://images.pexels.com/photos/5077062/pexels-photo-5077062.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Foodie app"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== FOOTER ========== -->
+        <footer class="footer">
+          <p>© 2025 Foodie. All rights reserved.</p>
+        </footer>
+      </main>
+
+      <!-- RIGHT DARK PANEL -->
+      <aside class="side-overlay"></aside>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
